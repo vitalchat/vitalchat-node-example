@@ -9,7 +9,7 @@ var client = new vitalchat({
 async function call() {
     var devices = await client.devices();
     var data = await client.call({
-        device_id: devices[0],
+        device_id: devices[0].device_id,
         caller_id: 'test caller',
         action: 'knock'
     });
