@@ -1,0 +1,22 @@
+{
+  "name": "vitalchat-node-example",
+  "version": "1.0.0",
+  "description": "``` git clone git@github.com:vitalchat/vitalchat-node-example.git cd vitalchat-node-example npm install",
+  "main": "call.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vitalchat/vitalchat-node-example.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vitalchat/vitalchat-node-example/issues"
+  },
+  "homepage": "https://github.com/vitalchat/vitalchat-node-example#readme",
+  "dependencies": {
+    "vitalchat": "^1.0.1"
+  }
+}
