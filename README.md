@@ -8,5 +8,5 @@ export VITALCHAT_HOST=""
 export VITALCHAT_KEY=""
 export VITALCHAT_SECRET=""
 
-node call.js
+node index.js
 ```

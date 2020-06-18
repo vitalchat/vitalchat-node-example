@@ -1,4 +1,3 @@
-
 var vitalchat = require('vitalchat');
 var client = new vitalchat({
     host: process.env.VITALCHAT_HOST,
@@ -6,18 +5,27 @@ var client = new vitalchat({
     secret: process.env.VITALCHAT_SECRET
 });
 
-async function call() {
+client.on('event', (event) => {
+    console.log(event);
+});
+
+client.on('log', (log) => {
+    console.log(log);
+});
+
+client.on('error', (err) => {
+    console.log(err);
+});
+
+(async () => {
+    client.listen();
     var devices = await client.devices();
+    console.log(devices);
     var data = await client.call({
         device_id: devices[0].device_id,
         caller_id: 'test caller',
         action: 'knock'
     });
-    return data;
-}
-
-(async () => {
-    var data = await call();
     console.log(data);
 })().catch((err) => {
     console.error(err);
