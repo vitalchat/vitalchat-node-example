@@ -20,7 +20,10 @@ client.on('error', (err) => {
 (async () => {
     client.listen();
     var devices = await client.devices();
-    console.log(devices);
+    if (devices.length === 0) {
+        console.log('no devices found');
+        return;
+    }
     var data = await client.call({
         device_id: devices[0].device_id,
         caller_id: 'test caller',
