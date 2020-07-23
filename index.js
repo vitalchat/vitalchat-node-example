@@ -18,7 +18,7 @@ client.on('error', (err) => {
 });
 
 (async () => {
-    client.listen();
+    console.log('connecting to', process.env.VITALCHAT_HOST);
     var devices = await client.devices();
     if (devices.length === 0) {
         console.log('no devices found');
@@ -30,6 +30,7 @@ client.on('error', (err) => {
         action: 'knock'
     });
     console.log(data);
+    client.listen();
 })().catch((err) => {
     console.error(err);
 });
