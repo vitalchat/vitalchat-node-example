@@ -1,6 +1,6 @@
 {
   "name": "vitalchat-node-example",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "``` git clone git@github.com:vitalchat/vitalchat-node-example.git cd vitalchat-node-example npm install",
   "main": "call.js",
   "scripts": {
