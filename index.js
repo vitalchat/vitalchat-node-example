@@ -24,11 +24,11 @@ client.on('error', (err) => {
         console.log('no devices found');
         return;
     }
-    var data = await client.call({
-        device_id: devices[0].device_id,
-        caller_id: 'test caller',
-        action: 'knock'
-    });
+    var data = await client.enter({
+		device: devices[0].device_id,
+		name: 'test caller',
+		device_description: 'John Smith'
+	});
     console.log(data);
     client.listen();
 })().catch((err) => {

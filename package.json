@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/vitalchat/vitalchat-node-example#readme",
   "dependencies": {
-    "vitalchat": "^2.0.2"
+    "vitalchat": "^2.0.4"
   }
 }
