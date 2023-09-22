@@ -18,6 +18,6 @@
   "homepage": "https://github.com/vitalchat/vitalchat-node-example#readme",
   "dependencies": {
     "lodash": "^4.17.21",
-    "vitalchat": "^2.0.10"
+    "vitalchat": "^2.0.11"
   }
 }
